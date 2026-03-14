@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Mercado 360° — Cosoleacaque</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900&family=DM+Mono:wght@300;400&family=Crimson+Pro:ital,wght@0,400;0,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="mercado360.css">
+</head>
+<body>
+
+  <!-- ── PANTALLA DE ENTRADA ── -->
+  <div id="intro">
+    <p class="ibadge">✦ Experiencia Inmersiva · Cosoleacaque, Ver.</p>
+    <h1 class="ititle">Mercado<br><em>360°</em></h1>
+    <p class="isub">Camina por el mercado municipal desde cualquier parte del mundo</p>
+    <div class="ifeats">
+      <div class="if_"><span>🌐</span><span>Vista 360° real</span></div>
+      <div class="if_"><span>🚶</span><span>Camina libremente</span></div>
+      <div class="if_"><span>📍</span><span>Puntos de interés</span></div>
+      <div class="if_"><span>🛒</span><span>Compra en línea</span></div>
+      <div class="if_"><span>✈️</span><span>Envío DHL mundial</span></div>
+    </div>
+    <button class="benter" id="btn-enter">▶ Entrar al mercado</button>
+    <p class="inote">Sistema de navegación por nodos listo · Agrega tus fotos 360° para activar</p>
+  </div>
+
+  <!-- ── PANTALLA DE CARGA ── -->
+  <div id="loading">
+    <div class="lring"></div>
+    <div class="ltxt">Cargando…</div>
+  </div>
+
+  <!-- ── VISOR 3D ── -->
+  <canvas id="c"></canvas>
+  <div id="fade"></div>
+  <div id="vig"></div>
+  <div id="nav-layer"></div>
+
+    <!-- ── BARRA SUPERIOR ── -->
+  <div id="topbar">
+    <div class="tb-l">
+      <a href="index.html" id="btn-back">← Salir</a>
+      <div class="tb-title">Mercado <em>Cosoleacaque</em></div>
+    </div>
+    <div id="node-info">—</div>
+  </div>
+
+  <!-- ── BOTÓN CARRITO ── -->
+  <button id="btn-cart" onclick="toggleCart()">🛒 <span id="cqty">0</span></button>
+
+  <!-- ── INSTRUCCIÓN ── -->
+  <div id="hint">🖱 Arrastra para mirar · 🔵 Haz clic en los círculos del suelo para avanzar</div>
+
+  <!-- ── MINIMAPA ── -->
+  <div id="minimap">
+    <div class="mm-title">✦ Mapa del mercado</div>
+    <div class="mm-nodes" id="mm-nodes"></div>
+  </div>
+
+  <!-- ── PANEL DE PUESTO ── -->
+  <div id="panel">
+    <button id="pcl" onclick="closePanel()">✕</button>
+    <div class="ph" id="ph">
+      <span id="pemoji"></span>
+      <div class="pbadge" id="pbadge"></div>
+    </div>
+    <div class="pb">
+      <div class="pcat"  id="pcat"></div>
+      <div class="pname" id="pname"></div>
+      <div class="pdesc" id="pdesc"></div>
+      <div class="pgal"  id="pgal"></div>
+      <div class="psec"  id="psec"></div>
+      <div id="pprods"></div>
+    </div>
+    <div class="pfoot" id="pfoot"></div>
+  </div>
+
+  <!-- ── MODAL CARRITO ── -->
+  <div id="mCart">
+    <div class="cbox">
+      <div class="chd">
+        <div class="cht">Tu canasta 🧺</div>
+        <button class="chx" onclick="toggleCart()">✕</button>
+      </div>
+      <div class="clist" id="clist"></div>
+      <div class="cft">
+        <div class="ctr"><span>Subtotal</span><span id="csub">$0 MXN</span></div>
+        <div class="ctr"><span>Envío DHL estimado</span><span>Al pagar</span></div>
+        <div class="ctr big"><span>Total</span><span id="ctot">$0 MXN</span></div>
+        <button class="bpay" onclick="checkout()">📦 Pagar · Envío mundial</button>
+        <div class="dhl">✈️ Envíos via DHL Express desde Cosoleacaque, Ver.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── NOTIFICACIÓN ── -->
+  <div id="toast"></div>
+
+  <!-- ── BANDA TEXTIL ── -->
+  <div class="tband"></div>
+
+  <!-- ── SCRIPTS ── -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="mercado360.js"></script>
+
+</body>
+</html>
