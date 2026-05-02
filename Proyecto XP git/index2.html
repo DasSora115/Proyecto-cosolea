@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INMERSIAKS — Tecnología 360° y Experiencias Inmersivas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles3.css">
+  <link rel="stylesheet" href="shared-identity.css">
+</head>
+<body>
+
+<canvas id="canvas-bg"></canvas>
+
+<!-- ── NAV ── -->
+<nav id="navbar">
+  <a href="#" class="logo">IMMERSIA<span>KS</span></a>
+  <ul class="nav-links" id="corp-nav-links">
+    <li><a href="#services">Servicios</a></li>
+    <li><a href="#about">Nosotros</a></li>
+    <li><a href="#features">Tecnología</a></li>
+    <li><a href="#gallery">Proyectos</a></li>
+    <li><a href="#demo">Demo</a></li>
+    <li><a href="#cta">Contacto</a></li>
+  </ul>
+  <a href="#cta" class="btn-primary nav-cta-btn">Cotiza tu proyecto →</a>
+  <button class="hamburger-btn" id="corp-hamburger" aria-label="Abrir menú" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile nav for corporate site -->
+<div class="mobile-nav" id="corp-mobile-nav">
+  <a href="#services">Servicios</a>
+  <a href="#about">Nosotros</a>
+  <a href="#features">Tecnología</a>
+  <a href="#gallery">Proyectos</a>
+  <a href="#demo">🚀 Demo Interactivo</a>
+  <a href="#cta">Contacto</a>
+  <a href="index.html" style="margin-top:1rem; color:var(--brand-magenta);">→ Ver demo de Cosoleacaque</a>
+</div>
+<div class="mobile-overlay" id="corp-mobile-overlay"></div>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-tag">Tecnología Inmersiva</div>
+        <h1 class="hero-title">
+          IMMERSIA<span class="ks">KS</span>
+          <span class="sub-line">Tecnología 360° y experiencias inmersivas</span>
+        </h1>
+        <p class="hero-desc">Creamos soluciones inmersivas que conectan personas con experiencias únicas a través de la tecnología. Desde VR hasta instalaciones interactivas.</p>
+        <div class="hero-ctas">
+          <a href="#services" class="btn-primary">Explorar servicios →</a>
+          <a href="#gallery" class="btn-ghost">▶ Ver proyectos</a>
+        </div>
+        <div class="hero-badges">
+          <div class="badge">
+            <span class="badge-num">+<span>120</span></span>
+            <span class="badge-label">Proyectos entregados</span>
+          </div>
+          <div class="badge">
+            <span class="badge-num"><span>360</span>°</span>
+            <span class="badge-label">Experiencias completas</span>
+          </div>
+          <div class="badge">
+            <span class="badge-num"><span>8</span>+</span>
+            <span class="badge-label">Años de experiencia</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-orb">
+          <div class="orbit-ring orbit-ring-1"><div class="orbit-dot"></div></div>
+          <div class="orbit-ring orbit-ring-2"><div class="orbit-dot orbit-dot-2"></div></div>
+          <div class="hero-orb-inner">🌐</div>
+        </div>
+        <div class="tech-pill tp-1">🥽 VR / AR</div>
+        <div class="tech-pill tp-2">🌿 Instalaciones Live</div>
+        <div class="tech-pill tp-3">⚡ Real-time 3D</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICES ── -->
+<section id="services">
+  <div class="container">
+    <div class="services-header">
+      <div>
+        <div class="section-label">Nuestros Servicios</div>
+        <h2 class="section-title">Soluciones inmersivas<br>para tu negocio</h2>
+      </div>
+      <div>
+        <p class="section-desc">Desarrollamos experiencias y herramientas que impulsan tu marca, conectan con tu audiencia y llevan tu visión al siguiente nivel.</p>
+        <br><a href="#cta" class="btn-ghost" style="margin-top:18px">Ver todos los servicios →</a>
+      </div>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card blue fade-up">
+        <div class="service-icon icon-blue">🥽</div>
+        <div class="service-name">Experiencias VR</div>
+        <p class="service-desc">Creamos mundos virtuales interactivos que generan impacto y engagement duradero en tu audiencia.</p>
+        <a href="#cta" class="service-link">Conocer más →</a>
+      </div>
+      <div class="service-card green fade-up">
+        <div class="service-icon icon-green">🔮</div>
+        <div class="service-name">Tours y Contenido 360°</div>
+        <p class="service-desc">Tours virtuales, videos 360° y fotos esféricas para diferentes industrias y propósitos.</p>
+        <a href="#cta" class="service-link green-link">Conocer más →</a>
+      </div>
+      <div class="service-card blue fade-up">
+        <div class="service-icon icon-blue">📡</div>
+        <div class="service-name">Instalaciones Interactivas</div>
+        <p class="service-desc">Instalaciones inmersivas que combinan tecnología, creatividad y storytelling en espacios físicos.</p>
+        <a href="#cta" class="service-link">Conocer más →</a>
+      </div>
+      <div class="service-card green fade-up">
+        <div class="service-icon icon-green">⚙️</div>
+        <div class="service-name">Desarrollo a Medida</div>
+        <p class="service-desc">Soluciones tecnológicas personalizadas desarrolladas específicamente para las necesidades de tu proyecto.</p>
+        <a href="#cta" class="service-link green-link">Conocer más →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="container">
+    <div class="about-inner">
+      <div class="about-visual fade-up">
+        <div class="about-card-main">
+          <div class="about-globe">🌍</div>
+        </div>
+        <div class="about-stat-cards">
+          <div class="stat-mini">
+            <div class="stat-mini-num"><span class="accent">98%</span></div>
+            <div class="stat-mini-label">Satisfacción de clientes</div>
+          </div>
+          <div class="stat-mini">
+            <div class="stat-mini-num">4.9 <span style="font-size:.9rem;color:var(--text3)">★</span></div>
+            <div class="stat-mini-label">Valoración promedio</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-text fade-up">
+        <div class="section-label">Sobre INMERSIAKS</div>
+        <h2 class="section-title" style="margin-bottom:24px">Pioneros en<br>tecnología inmersiva</h2>
+        <p>Somos un estudio especializado en crear experiencias digitales que trascienden la pantalla. Fundado con la misión de democratizar el acceso a tecnologías inmersivas, combinamos diseño estratégico con desarrollo técnico de alta precisión.</p>
+        <p>Trabajamos con marcas, museos, desarrolladoras y agencias de todo el mundo para construir experiencias que sus usuarios no olvidarán.</p>
+        <div class="about-pillars">
+          <div class="pillar"><div class="pillar-dot"></div>Realidad Virtual</div>
+          <div class="pillar"><div class="pillar-dot"></div>Realidad Aumentada</div>
+          <div class="pillar"><div class="pillar-dot"></div>Contenido 360°</div>
+          <div class="pillar"><div class="pillar-dot"></div>Motion Capture</div>
+          <div class="pillar"><div class="pillar-dot"></div>WebGL & Three.js</div>
+          <div class="pillar"><div class="pillar-dot"></div>Instalaciones Live</div>
+        </div>
+        <a href="#cta" class="btn-primary" style="margin-top:32px">Hablemos de tu proyecto →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FEATURES ── -->
+<section id="features">
+  <div class="container">
+    <div style="text-align:center;max-width:560px;margin:0 auto">
+      <div class="section-label">Tecnología & Proceso</div>
+      <h2 class="section-title">Construido con las mejores<br>herramientas del sector</h2>
+    </div>
+    <div class="features-grid">
+      <div class="feature-item fade-up">
+        <span class="feature-icon">⚡</span>
+        <div class="feature-name">Renderizado Real-Time</div>
+        <p class="feature-desc">Motores de última generación para experiencias fluidas a 90fps+ en cualquier plataforma.</p>
+      </div>
+      <div class="feature-item fade-up">
+        <span class="feature-icon">🌐</span>
+        <div class="feature-name">WebXR Compatible</div>
+        <p class="feature-desc">Experiencias accesibles desde cualquier navegador, sin instalaciones ni hardware especializado.</p>
+      </div>
+      <div class="feature-item fade-up">
+        <span class="feature-icon">🔒</span>
+        <div class="feature-name">Infraestructura Segura</div>
+        <p class="feature-desc">Hosting dedicado con uptime garantizado del 99.9% y cifrado de extremo a extremo.</p>
+      </div>
+      <div class="feature-item fade-up">
+        <span class="feature-icon">📊</span>
+        <div class="feature-name">Analytics Inmersivo</div>
+        <p class="feature-desc">Dashboard en tiempo real para medir el engagement y comportamiento dentro de tus experiencias.</p>
+      </div>
+      <div class="feature-item fade-up">
+        <span class="feature-icon">🎨</span>
+        <div class="feature-name">Diseño Personalizado</div>
+        <p class="feature-desc">Cada experiencia es única y construida desde cero alineada con tu identidad de marca.</p>
+      </div>
+      <div class="feature-item fade-up">
+        <span class="feature-icon">🤝</span>
+        <div class="feature-name">Soporte Continuo</div>
+        <p class="feature-desc">Acompañamiento post-lanzamiento, actualizaciones y mantenimiento a largo plazo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── GALLERY ── -->
+<section id="gallery">
+  <div class="container">
+    <div class="services-header">
+      <div>
+        <div class="section-label">Proyectos Destacados</div>
+        <h2 class="section-title">Experiencias que<br>hablan por nosotros</h2>
+      </div>
+      <a href="#cta" class="btn-ghost">Ver todos los proyectos →</a>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-card gcbg-1 fade-up">
+        <div class="gc-bg">🏛️</div>
+        <div class="gc-overlay"></div>
+        <div class="gc-label"><strong>Museo Virtual</strong>Visita guiada 360°</div>
+      </div>
+      <div class="gallery-card gcbg-2 fade-up">
+        <div class="gc-bg">🏙️</div>
+        <div class="gc-overlay"></div>
+        <div class="gc-label"><strong>Tour Inmobiliario</strong>Renders interactivos</div>
+      </div>
+      <div class="gallery-card gcbg-3 fade-up">
+        <div class="gc-bg">🎭</div>
+        <div class="gc-overlay"></div>
+        <div class="gc-label"><strong>Evento Corporativo</strong>Instalación live</div>
+      </div>
+      <div class="gallery-card gcbg-4 fade-up">
+        <div class="gc-bg">🚗</div>
+        <div class="gc-overlay"></div>
+        <div class="gc-label"><strong>Configurador Auto</strong>WebXR 3D</div>
+      </div>
+      <div class="gallery-card gcbg-5 fade-up">
+        <div class="gc-bg">🏠</div>
+        <div class="gc-overlay"></div>
+        <div class="gc-label"><strong>Showroom Digital</strong>360° interactivo</div>
+        <div class="badge-360">360°</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ── -->
+<section id="cta">
+  <div class="container">
+    <div class="cta-box">
+      <div>
+        <div class="section-label">Empieza hoy</div>
+        <h2 class="cta-title">¿Listo para crear algo increíble?</h2>
+        <p class="cta-sub">Hablemos de tu proyecto y llevemos tu idea a una nueva dimensión. Sin compromisos, sin burocracia.</p>
+        <div class="cta-checks">
+          <div class="cta-check"><span class="check-icon">✓</span> Respuesta en 24h</div>
+          <div class="cta-check"><span class="check-icon">✓</span> Consulta sin costo</div>
+          <div class="cta-check"><span class="check-icon">✓</span> Propuesta personalizada</div>
+        </div>
+      </div>
+
+      <form class="cta-form" onsubmit="handleSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Nombre</label>
+            <input type="text" placeholder="Tu nombre">
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="tu@email.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Servicio de interés</label>
+          <select>
+            <option value="">Selecciona una opción</option>
+            <option>Experiencias VR</option>
+            <option>Tours y Contenido 360°</option>
+            <option>Instalaciones Interactivas</option>
+            <option>Desarrollo a Medida</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Cuéntanos tu idea</label>
+          <textarea rows="3" placeholder="Describe brevemente tu proyecto..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Enviar mensaje ✈</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ── DEMO EN PROCESO ── -->
+<section id="demo" style="padding: 6rem 0; background: linear-gradient(160deg, #0D0522 0%, #1A0A2E 50%, #3B1060 100%); position: relative; overflow: hidden;">
+  <div class="container">
+    <div style="text-align: center; margin-bottom: 3rem;">
+      <div class="section-label" style="color: #F24D95;">Demo Interactivo</div>
+      <h2 class="section-title" style="color: #fff; margin-bottom: 1rem;">
+        Explora nuestro demo<br>en desarrollo
+      </h2>
+      <p style="max-width: 560px; margin: 0 auto; font-size: 1rem; line-height: 1.65; color: rgba(234,232,245,0.65);">
+        Hemos creado una experiencia inmersiva 360° para el municipio de Cosoleacaque, Veracruz. 
+        Explora cómo transformamos espacios físicos en experiencias digitales interactivas.
+      </p>
+    </div>
+
+    <div style="max-width: 680px; margin: 0 auto;">
+      <div class="demo-project-card" onclick="window.location.href='index.html'">
+        <div class="demo-project-tag"> En desarrollo</div>
+        <h3 class="demo-project-title">Cosoleacaque 360° · Veracruz</h3>
+        <p class="demo-project-desc">
+          Recorrido virtual inmersivo por el municipio de Cosoleacaque: su cultura, gastronomía, 
+          artesanías y tradiciones. Incluye mercado 360°, galería interactiva y experiencias de captura gamificada.
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 0.6rem; margin-bottom: 1.5rem;">
+          <span style="font-family: 'DM Mono', monospace; font-size: 0.68rem; padding: 0.3rem 0.7rem; background: rgba(108,99,255,0.12); border-radius: 20px; color: #6C63FF;">🌐 Vista 360°</span>
+          <span style="font-family: 'DM Mono', monospace; font-size: 0.68rem; padding: 0.3rem 0.7rem; background: rgba(108,99,255,0.12); border-radius: 20px; color: #6C63FF;">🎨 UI/UX Cultural</span>
+          <span style="font-family: 'DM Mono', monospace; font-size: 0.68rem; padding: 0.3rem 0.7rem; background: rgba(108,99,255,0.12); border-radius: 20px; color: #6C63FF;">🎮 Gamificación</span>
+          <span style="font-family: 'DM Mono', monospace; font-size: 0.68rem; padding: 0.3rem 0.7rem; background: rgba(108,99,255,0.12); border-radius: 20px; color: #6C63FF;">📱 Responsive</span>
+        </div>
+        <a href="index.html" class="demo-project-btn">Explorar demo →</a>
+      </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 2.5rem; font-size: 0.82rem; color: rgba(234,232,245,0.5); font-family: 'DM Mono', monospace;">
+      💡 Este demo representa nuestro enfoque para crear experiencias inmersivas que conectan con la identidad local
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">IMMERSIA<span>KS</span></a>
+        <p>Creamos experiencias inmersivas que conectan marcas con personas a través de la tecnología 360° y la realidad virtual.</p>
+        <div class="social-links">
+          <a href="#" class="social-link">𝕏</a>
+          <a href="#" class="social-link">in</a>
+          <a href="#" class="social-link">▶</a>
+          <a href="#" class="social-link">Be</a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#hero">Inicio</a></li>
+          <li><a href="#services">Servicios</a></li>
+          <li><a href="#about">Nosotros</a></li>
+          <li><a href="#gallery">Proyectos</a></li>
+          <li><a href="#cta">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#services">Experiencias VR</a></li>
+          <li><a href="#services">Tours 360°</a></li>
+          <li><a href="#services">Instalaciones</a></li>
+          <li><a href="#services">Desarrollo</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-contact">
+        <h4>Contacto</h4>
+        <p>
+          📧 <a href="mailto:hola@inmersiaks.com">hola@inmersiaks.com</a><br><br>
+          📞 +57 300 123 4567<br><br>
+          📍 Minatitlan, Mexico
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 INMERSIAKS. Todos los derechos reservados.</p>
+      <p>Política de Privacidad · Términos de Uso</p>
+    </div>
+  </div>
+</footer>
+
+<script src="main2.js"></script>
+</body>
+</html>
